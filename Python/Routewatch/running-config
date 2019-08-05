@@ -1,0 +1,2 @@
+event manager directory user policy "flash:/"
+event manager policy routewatch.py type user
