@@ -1,0 +1,7 @@
+event manager applet incr
+ event none
+ action 1 set _i "2"
+ action 2 while $_i lt 10
+ action 3  syslog msg "i is $_i"
+ action 4  increment _i 1
+ action 5 end

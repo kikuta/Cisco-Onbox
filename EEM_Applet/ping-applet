@@ -1,0 +1,16 @@
+event manager applet ping-applet
+ event none maxrun 300
+ action 001 cli command "enable"
+ action 002 set done "0"
+ action 003 while $done eq 0
+ action 004  wait 1
+ action 005  syslog msg "## Pinging 10.71.154.42... ##"
+ action 006  cli command "ping ip 10.71.154.42"
+ action 007  regexp "!!!!!" "$_cli_result"
+ action 008  if $_regexp_result eq "1"
+ action 009   syslog msg "## 10.71.154.42 is reachable :-) ##"
+ action 012   set done "1"
+ action 013  else
+ action 014   syslog msg "## 10.71.154.42 is unreachable :-( ##"
+ action 016  end
+ action 017 end
