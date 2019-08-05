@@ -1,0 +1,9 @@
+event manager environment wbexteams_roomid <roomid>
+event manager environment wbexteams_token <token>
+!
+event manager applet TestAfterConfig
+ event syslog pattern "SYS-5-CONFIG_I"
+ action 100 cli command "enable"
+ action 110 syslog msg "## Testing after Configuration Change ...... ##"
+ action 200 cli command "guestshell run python /bootflash/pingreport.py $wbexteams_token $wbexteams_roomid"
+ action 300 syslog msg "## Reachability test by On-box python was done! ##"
