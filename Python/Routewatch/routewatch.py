@@ -1,4 +1,5 @@
 ::cisco::eem::event_register_routing network 10.2.2.0/24 type all ge 24
+#::cisco::eem::event_register_none
 
 import requests
 import sys
