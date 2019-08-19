@@ -8,3 +8,6 @@ r = requests.get(url, headers=headers)
 
 data = r.json()
 print json.dumps(data, indent=4)
+
+service = data[0]["service"]
+print service
