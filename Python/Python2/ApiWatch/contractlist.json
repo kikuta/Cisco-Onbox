@@ -1,0 +1,19 @@
+{
+  "contractlist":[
+   {
+     "service":"economy",
+     "cost":"500yen",
+     "speed":"10mbps"
+   },
+   {
+     "service":"business",
+     "cost":"1000yen",
+     "speed":"100mbps"
+   },
+   {
+     "service":"first",
+     "cost":"2000yen",
+     "speed":"1000mbps"
+   }
+  ]
+}

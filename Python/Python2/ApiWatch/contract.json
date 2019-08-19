@@ -1,0 +1,9 @@
+{
+  "contractlist":[
+   {
+     "service":"economy",
+     "cost":"500yen",
+     "speed":"10"
+   }
+  ]
+}
