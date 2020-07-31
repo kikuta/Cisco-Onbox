@@ -4,6 +4,8 @@ Problem: When SIer changes the running-config such as ACL/Vlan/Routing, the reac
 
 Solution: Use On-box Python to test, documentation, and sending the output to alias or SNS. The python script can be initiated by EEM events such as syslog (Syslog ED), timer (Timer ED), or routing change (Routing ED).
 
+# How the script works
 ![How the script works](./image1.png)
 
+# Configuration
 ![Configuration](./image2.png)
